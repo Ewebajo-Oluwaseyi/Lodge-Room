@@ -13,14 +13,9 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 550px;
+  height: 600px;
 }
 
-@media(min-width: 414px) {
-  .Hero {
-    height: 600px;
-  }
-}
 @media(min-width: 992px) {
   .Hero {
     height: 700px;

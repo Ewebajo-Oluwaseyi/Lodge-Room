@@ -53,14 +53,13 @@ const Container = (prop: Props) => {
                       )}
                     />
                     <Route
-                      path="/home"
+                      path="/"
                       render={() => (
                           <Suspense fallback={<Spinner/>}>
                             <Home/>
                           </Suspense>
                       )}
                     />
-                    <Redirect to="/home"/>
                 </Switch>
             </div>
             <Suspense fallback={<Spinner/>}>

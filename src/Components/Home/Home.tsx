@@ -17,7 +17,7 @@ const Home = () => {
                 <div className={Styles.HeroDark}>
                   <div className={Styles.HeroText}>
                     <h1>Explore hotels in Nigeria</h1>
-                    <button>Get Started</button>
+                    <button onClick={ctx.guestSignUp}>Get Started</button>
                   </div>
                 </div>
             </section>
