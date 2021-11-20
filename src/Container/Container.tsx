@@ -1,6 +1,6 @@
 import React, {Suspense, useContext} from 'react';
 import Style from './Container.module.css';
-import {Switch, Route, Redirect} from 'react-router-dom';
+import {Switch, Route } from 'react-router-dom';
 import {Home, Signup, HostForm, Listing, Booking, RoomDetails} from '../Routes/routes';
 import Header from '../Components//Header/Header';
 import Footer from '../Components/Footer/Footer';
