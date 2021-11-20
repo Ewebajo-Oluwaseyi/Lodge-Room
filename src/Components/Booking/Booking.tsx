@@ -3,11 +3,9 @@ import Style from '../Listing/Listing.module.css';
 import ListItem from '../Listing/ListItem';
 import AuthContext from '../../store/authContext';
 import axios from 'axios';
-import Spinner from '../Spinner/Spinner';
 
 const Booking = () => {
     const ctx = useContext(AuthContext);
-    const [loading, setLoading] = useState(false);
     const [ bookings, setBookings ] = useState(ctx.booked);
     
     useEffect(() => {
@@ -27,11 +25,10 @@ const Booking = () => {
     }
 
     return (
-        <>
-          {loading && <Spinner />}  
+        <> 
           <div className={Style.Listing}>
              <h3>Your Bookings</h3>
-             {books.length === 0 ? <h4 style={{ textAlign: 'center' }}>List is currently empty</h4> : books.map((room) => room && <ListItem type={ctx.userData.type} deleteHandle={handleDelete} loading={loading} handleFavorites={ctx.handleFavorites} favorites={ctx.favorites} view={ctx.handleRoomView} list={room} />)}
+             {books.length === 0 ? <h4 style={{ textAlign: 'center' }}>List is currently empty</h4> : books.map((room) => room && <ListItem type={ctx.userData.type} deleteHandle={handleDelete} handleFavorites={ctx.handleFavorites} favorites={ctx.favorites} view={ctx.handleRoomView} list={room} />)}
           </div>
         </>
     )

@@ -47,19 +47,19 @@ const MobileNav = (props: Props) => {
             <ul className={openNav  ? [Style.UlNav, Style.OpenNav].join(" "): [Style.UlNav].join(" ")}>
                 {props.loggedIn ? (<>
                   {props.type === 'guest' && <>
-                    <li onClick={() => Host()}><a>Become a Host</a></li>
-                    <li onClick={() => setOpenNav(!openNav)}><a href="!#" onClick={() => history.push(`/${props.name}/list`)}>List</a></li>
-                    <li onClick={() => setOpenNav(!openNav)}><a href="!#" onClick={() => history.push(`/${props.name}/bookings`)}>My Bookings</a></li>
+                    <li onClick={() => Host()}><span>Become a Host</span></li>
+                    <li onClick={() => setOpenNav(!openNav)}><span onClick={() => history.push(`/${props.name}/list`)}>List</span></li>
+                    <li onClick={() => setOpenNav(!openNav)}><span onClick={() => history.push(`/${props.name}/bookings`)}>My Bookings</span></li>
                   </>}
                   {props.type === 'host' && <>
-                  <li onClick={() => List()}><a>Add a Room</a></li>
-                  <li onClick={() => Listing()}><a>List</a></li>
+                  <li onClick={() => List()}><span>Add a Room</span></li>
+                  <li onClick={() => Listing()}><span>List</span></li>
                   </>}
-                  <li onClick={() => setOpenNav(!openNav)}><a href="!#" onClick={props.logout} style={{color: "#fff"}} className={Style.Active}>Log Out</a></li>
+                  <li onClick={() => setOpenNav(!openNav)}><span onClick={props.logout} style={{color: "#fff"}} className={Style.Active}>Log Out</span></li>
                   </>) :( <>
                   <li onClick={() => setOpenNav(!openNav)}><span onClick={props.hostSignUp}>Host Sign up</span></li>
-                  <li onClick={() => setOpenNav(!openNav)}><a href="!#" onClick={props.guestSignUp}>Sign Up</a></li>
-                  <li onClick={() => setOpenNav(!openNav)}><a href="!#" style={{color: "#fff"}} className={Style.Active} onClick={props.signIn}>Login</a></li>
+                  <li onClick={() => setOpenNav(!openNav)}><span onClick={props.guestSignUp}>Sign Up</span></li>
+                  <li onClick={() => setOpenNav(!openNav)}><span style={{color: "#fff"}} className={Style.Active} onClick={props.signIn}>Login</span></li>
                 </>)}
             </ul>
             <div className={Style.MenuIcon} onClick={() => setOpenNav(!openNav)}>
