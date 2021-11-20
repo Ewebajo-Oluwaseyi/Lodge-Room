@@ -1,0 +1,108 @@
+.Host {
+  padding: 30px 10px;
+  margin-top: 40px;
+}
+
+.FormCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 5px;
+}
+
+.Col{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+  width: 90%;
+}
+.Row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 10px;
+}
+@media (min-width: 425px) {
+  .Col {
+    width: 70%;
+  }
+  .Row {
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .Col {
+    width: 50%;
+  }
+  .Row {
+    width: 50%;
+  }
+}
+.Col label {
+  margin-bottom: 15px;
+  justify-content: flex-start;
+  display: flex;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+.Col input {
+  width: 100%;
+  height: 30px;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 414px) {
+  .Col input {
+    height: 40px;
+  }
+  .Col input[type="file"] {
+    height: 40px;
+  }
+  .Col label {
+    line-height: 16px;
+    font-size: 16px;
+  }
+}
+.Col input[type="file"] {
+  width: 100%;
+  height: 30px;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.Button {
+  display: block;
+  margin-top: 20px;
+  border: none;
+  background-color: #ad8c68;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Button:hover {
+  background-color: #dfc5aa;
+}
+.Button p {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}

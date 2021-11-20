@@ -1,0 +1,146 @@
+.MobileNav {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    position: relative;
+  }
+  
+  @media (min-width: 992px) {
+    .MobileNav {
+      display: none;
+    }
+  }
+  
+  .UlNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 2px 0px 4px -2px #333;
+    height: 100vh;
+    width: 100%;
+    max-width: 500px;
+    padding-top: 140px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 200ms linear;
+    z-index: 50000;
+  }
+  .OpenNav {
+    transform: scaleX(1);
+  }
+  
+  .UlNav li {
+    height: 50px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .UlNav li a {
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    height: 100%;
+    width: 100%;
+    -webkit-box-align: center;
+    color: #a84d38;
+    font-family: 'Parisienne', cursive;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  
+  .Active {
+    background-color: #a84d38;
+    color: #fff;
+  }
+  
+  .UlNav li a .Active:hover {
+    background-color: #cf8676;
+  }
+  
+  .MenuIcon{
+    position: fixed;
+    right: 1rem;
+    top: 1.6rem;
+    width: 25px;
+    cursor: pointer;
+    z-index: 200000;
+  }
+  
+  .FirstSpan {
+    display: block;
+    height: 4px;
+    background-color: #a84d38;
+    margin-bottom: 4px;
+    pointer-events: none;
+    transition: 0.2 ease-in;
+  }
+  
+  .OpenFirst {
+    transform: rotate(45deg) translateX(11px);
+  }
+  
+  .SecondSpan {
+    display: block;
+    height: 4px;
+    background-color: #a84d38;
+    margin-bottom: 4px;
+    pointer-events: none;
+    transition: 0.2 ease-in;
+  }
+  
+  .OpenSecond {
+    background-color: #ee380f;
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  
+  .ThirdSpan {
+    display: block;
+    height: 4px;
+    background-color: #a84d38;
+    margin-bottom: 0px;
+    pointer-events: none;
+    transition: 0.2 ease-in;
+  }
+  .OpenThird {
+    transform: rotate(-45deg) translateX(11px);
+  }
+  
+  
+  .ProfileLogo {
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid #a84d38;
+    border-radius: 100%;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1000000;
+    margin-top: 80px;
+  }
+  
+  .ProfileLogo .fas {
+    width: auto;
+    height: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .ProfileName {
+    position: fixed;
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    color: #a84d38;
+    z-index: 1000000;
+    margin-top: 80px;
+  }

@@ -1,0 +1,70 @@
+.Modal {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: -100vh;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  z-index: 5000;
+  transition: all 0.5s ease;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+.Modal .Children {
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 50vw;
+  background-color: #a84d38;
+  padding: 10px 20px;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  max-width: 85vw;
+  max-height: fit-content;
+  border-radius: 10px;
+  z-index: 5000;
+}
+
+@media (min-width: 414px) {
+  .Modal .Children {
+    max-width: 450px;
+  }
+  
+}
+@media (min-width: 678px) {
+  .Modal .Children {
+    max-width: 500;
+    padding: 30px 20px;
+  }
+}
+
+
+.Modal .Children h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.Modal .Children p {
+  color: #fff;
+  line-height: 30px;
+}
+.Modal .Children > span {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+  .Modal .Children .front-row {
+    margin-top: 20px;
+  }
+
+  
+.Show {
+  bottom: 0;
+  top: 0;
+}

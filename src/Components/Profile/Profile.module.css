@@ -1,0 +1,86 @@
+.Profile {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.Profile a {
+  font-size: 1.4rem;
+  color: #a84d38;
+  font-family: 'Parisienne', cursive;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ProfileUser {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.ProfileLogo {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #a84d38;
+  border-radius: 100%;
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ProfileLogo .fas {
+  width: auto;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+.ProfileName {
+  font-size: 16px;
+  color: #a84d38;
+}
+
+.Dropdown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transform: translate(-40%, 110%);
+  z-index: 5;
+}
+
+.Dropdown::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: white;
+  transform: rotate(45deg) translateY(-70%);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 100ms ease-in-out;
+}
+
+.Dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #a84d38;
+}
+
+.Dropdown li:hover {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.Dropdown li i {
+  margin-right: 1rem;
+}

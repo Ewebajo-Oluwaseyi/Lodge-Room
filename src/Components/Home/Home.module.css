@@ -1,0 +1,365 @@
+.Home {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Hero {
+  background-image: url("../../assests/homeBg1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+}
+
+@media(min-width: 414px) {
+  .Hero {
+    height: 600px;
+  }
+}
+@media(min-width: 992px) {
+  .Hero {
+    height: 700px;
+  }
+}
+.HeroDark {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+.Hero .HeroText {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 1024px) { 
+  .Hero .HeroText {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.Hero .HeroText h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media(min-width: 414px) {
+  .Hero .HeroText h1 {
+  letter-spacing: 2px;
+  }
+}
+@media (min-width: 992px) {
+  .Hero .HeroText h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .Hero .HeroText h1 {
+    font-size: 2.5rem;
+  }
+}
+.Hero .HeroText button {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  background: #fff;
+  color: #ad8c68;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
+
+}
+.Hero .HeroText button span {
+  width: 0;
+  opacity: 0.7;
+  transition: all 0.5s ease-out;
+}
+
+.Hero .HeroText button:hover {
+  color: #fff;
+  background-color: #ad8c68;
+
+}
+.Hero .HeroText button:hover span {
+  z-index: -1;
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  background-color: #ad8c68;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+@media(min-width: 768px) {
+  .Hero .HeroText button {
+    width: 200px;
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Hero .HeroText button {
+    font-size: 1.1rem;
+    width: 220px;
+    height: 40px;
+  }
+}
+
+.hostBg {
+  display: grid;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background: #eeee;
+  overflow: hidden;
+}
+
+.hostBg > div {
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 1;
+}
+@media(min-width: 414px) {
+  .hostBg > div {
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 768px) {
+  .hostBg > div {
+    padding: 50px 60px;
+  } 
+}
+
+.hostBg > div h1 {
+  min-height: 80px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+@media (min-width: 600px) {
+  .hostBg > div  {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 978px) {
+  .hostBg > div  {
+    font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: #333;
+  padding-right: 50px;
+  }
+  
+}
+
+.hostBg > div  button {
+  padding: 0 20px;
+  background: #ad8c68;
+  color: #fff;
+  width: 200px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  height: 40px;
+  margin: 0 auto;
+}
+@media (min-width: 568px) {
+  .hostBg > div  button {
+    margin-top: 20px;
+    height: 50px;
+    font-size: 1.3rem;
+    width: 240px;
+  }
+}
+@media (min-width: 568px) {
+  .hostBg {
+    padding-top: 0;
+    grid-template-columns: 1fr 1fr;
+    flex-flow: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hostBg {
+    width: 100vw;
+    margin-bottom: 0;
+    margin-top: 80px;
+  }
+}
+
+.hostBg img {
+  width: 100%;
+  flex: 1;
+  order: 2;
+  object-fit: cover;
+}
+
+.About {
+  padding: 35px 10px;
+  margin: 0 10px;
+}
+
+@media(min-width: 414px) {
+  .About {
+    padding: 65px 80px;
+    margin: 0 20px;
+  }
+}
+@media(min-width: 768px) {
+  .About {
+    padding: 65px 60px;
+    margin: 0 auto;
+  }
+}
+
+.About h2 {
+  text-align: center;
+  font-weight: 32px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+@media(min-width: 414px) {
+  .About h2 {
+    letter-spacing: 2px;
+  }
+}
+
+.About .Main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+.About .Main div i {
+  font-size: 80px;
+  color: darkgray;
+}
+@media(min-width: 414px) {
+  .About .Main div i {
+    font-size: 90px;
+  }
+}
+.About .Main div i:hover {
+  color: #a84e38;
+}
+
+.About .Main div h2 {
+  font-family: 'Parisienne', cursive;
+  color: #1d1d1d;
+}
+
+.About .Main div p {
+  color: gray;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: .03em;
+  line-height: 1.8em;
+}
+
+.About .Main div a {
+  text-decoration: none;
+  color: #ebeced;
+  background-color: #97a5aa;
+  text-align: center;
+  line-height: 45px;
+  font-weight: bold;
+  font-style: 14px;
+  width: 150px;
+  height: 45px;
+  letter-spacing: 1px;
+}
+
+@media(min-width: 414px) {
+  .About .Main div a {
+    width: 200px;
+    letter-spacing: 5px;
+  }
+}
+
+@media (min-width: 920px) {
+  .About {
+    padding: 90px 0 20px;
+    width: 80%;
+  }
+
+  .About .Main {
+    display: flex;
+  }
+
+  .About .Main div {
+    margin: 10px;
+    height: 450px;
+  }
+
+  .About .Main div h2 {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.Explore {
+  padding: 30px;
+}
+
+@media (min-width: 679px) {
+  .Explore {
+    padding: 50px;
+  }
+}
+
+.Explore h2 {
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.Explore .ExploreItems {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-gap: 30px;
+
+  
+}
+
+@media (min-width: 678px) {
+  .Explore .ExploreItems {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}
+@media (min-width: 978px) {
+  .Explore .ExploreItems {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+}
