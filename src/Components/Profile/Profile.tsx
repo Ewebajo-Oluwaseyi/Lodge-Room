@@ -19,13 +19,13 @@ const Profile = (props: Props) => {
     return (
         <div className={Styles.Profile}>
             {props.type === 'guest' && <>
-                <a href="!#" onClick={() => history.push('/host/hostform')}>Become a Host</a>
-                <a href="!#" onClick={() => history.push(`/${props.name}/list`)}>List</a>
-                <a href="!#" onClick={() => history.push(`/${props.name}/bookings`)}>My Bookings</a>
+                <span onClick={() => history.push('/host/hostform')}>Become a Host</span>
+                <span onClick={() => history.push(`/${props.name}/list`)}>List</span>
+                <span onClick={() => history.push(`/${props.name}/bookings`)}>My Bookings</span>
             </>}
             {props.type === 'host' && <>
-                <a href="!#" onClick={() => history.push('/host/hostform')}>Add a Room</a>
-                <a href="!#" onClick={() => history.push(`/${props.name}/list`)}>List</a>
+                <span onClick={() => history.push('/host/hostform')}>Add a Room</span>
+                <span onClick={() => history.push(`/${props.name}/list`)}>List</span>
             </>}
             <div className={Styles.ProfileUser} onClick={changeDropdown}>
                 <div className={Styles.ProfileLogo}>

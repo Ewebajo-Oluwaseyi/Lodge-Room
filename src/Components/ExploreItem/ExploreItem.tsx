@@ -12,9 +12,9 @@ const ExploreItem = (props: Props) => {
         <div className={Styles.ExploreItem}>
            <div className={Styles.imgWrapper}>
                 <img src={props.image} alt=""/>
-                {props.hover ? <div className={Styles.overlay}>
+                {/*props.hover ? <div className={Styles.overlay}>
                     <button className={Styles.button}><a href="!#">Explore</a></button>
-                </div>: null}
+    </div>: null*/}
             </div>
             <h3>{props.title}</h3>
         </div>

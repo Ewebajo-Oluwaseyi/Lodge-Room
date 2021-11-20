@@ -39,7 +39,7 @@ const Signup = () => {
                         <input type="password" placeholder="Conform password" value={ctx.passwordConfirmation} onChange={ctx.handleConfirmPasswordInput}/>
                     </div>
                     <Button className={Style.Button} value={ctx.userType} type="submit" onClick={ctx.handleSignupSubmit}>
-                        {ctx.loading ? "Signing you up..." : "Sign Up"}
+                        {ctx.loading ? "Signing up..." : "Sign Up"}
                     </Button>
                     {ctx.formError !== "" && <div style={{ "color": "red", "textAlign": "center", "letterSpacing": "1px" }}>{ctx.formError}</div>}
                 </div>                
@@ -74,7 +74,7 @@ const Signup = () => {
                     </div>  
                 </div> 
                 <Button className={Style.Button} type="submit" onClick={ctx.handleLoginSubmit}>
-                    {ctx.loading ? "Logging you in..." : "Login"}
+                    {ctx.loading ? "Logging in..." : "Login"}
                 </Button>
                 {ctx.formError !== "" && <div style={{ "color": "red", "textAlign": "center", "letterSpacing": "1px" }}>{ctx.formError}</div>}
               </Form>

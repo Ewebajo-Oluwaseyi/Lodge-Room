@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import Styles from './Home.module.css';
-import bg1 from '../../assests/homeBg1.svg';
+import bg1 from '../../assests/lagos.jpg';
 import hostBg from '../../assests/hostBg.svg'
-import bg2 from '../../assests/chelsea-gates-0653_wY0nRc-unsplash.jpg';
-import bg3 from '../../assests/henrique-ferreira-RKsLQoSnuTc-unsplash.jpg';
-import bg4 from '../../assests/jolene-hardy-uuApNXxgcRM-unsplash.jpg';
+import bg2 from '../../assests/abuja.jpg';
+import bg3 from '../../assests/calabar.jpeg';
+import bg4 from '../../assests/ib.jpg';
 import ExploreItem from '../ExploreItem/ExploreItem';
 import AuthContext from '../../store/authContext';
 

@@ -57,7 +57,7 @@ const MobileNav = (props: Props) => {
                   </>}
                   <li onClick={() => setOpenNav(!openNav)}><a href="!#" onClick={props.logout} style={{color: "#fff"}} className={Style.Active}>Log Out</a></li>
                   </>) :( <>
-                  <li onClick={() => setOpenNav(!openNav)}><a href="!#" onClick={props.hostSignUp}>Host Sign up</a></li>
+                  <li onClick={() => setOpenNav(!openNav)}><span onClick={props.hostSignUp}>Host Sign up</span></li>
                   <li onClick={() => setOpenNav(!openNav)}><a href="!#" onClick={props.guestSignUp}>Sign Up</a></li>
                   <li onClick={() => setOpenNav(!openNav)}><a href="!#" style={{color: "#fff"}} className={Style.Active} onClick={props.signIn}>Login</a></li>
                 </>)}
