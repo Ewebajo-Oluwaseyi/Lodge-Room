@@ -36,7 +36,7 @@ const ListItem = (props: Props) => {
         <div className={Style.ListItem}>
             <div className={Style.Image}>
                 {props.list.image && props.list.image.length > 0 && <div>
-                    <img src={bg2} alt=""/>
+                    <img src={props.list.image} alt=""/>
                  </div>}
             </div>
             <div className={Style.details}>

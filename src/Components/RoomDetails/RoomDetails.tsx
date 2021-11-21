@@ -53,7 +53,9 @@ const RoomDetails = () => {
         <div className={Style.Main}>
           <div className={Style.Contents}>
             <div className={Style.Image}>
-                <img src={bg2} alt="!#"/>
+                {data.image && data.image.length > 0 && <div>
+                    <img src={data.image} alt=""/>
+                 </div>}
             </div>
             <div className={Style.Content}>
               <h2>{data.title} {/*ctx.favorites && ctx.favorites.includes(data._id) ? <i style={{"color": "red"}} className="fas fa-heart"></i> : 
