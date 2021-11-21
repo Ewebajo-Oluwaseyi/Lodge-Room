@@ -14,21 +14,21 @@ const Booking = () => {
 
       const books = bookings.map((id) => ctx.roomList.find((room) => room._id === id));
 
-      const handleDelete = async (id: any) => {
+     /* const handleDelete = async (id: any) => {
         try{
             const res = await axios.delete(`https://polar-ridge-98480.herokuapp.com/api/listing/${id}`);
-            console.log(res)
+            //console.log(res)
             return res;
         } catch(e) {
             return e
         }
-    }
+    }*/
 
     return (
         <> 
           <div className={Style.Listing}>
              <h3>Your Bookings</h3>
-             {books.length === 0 ? <h4 style={{ textAlign: 'center' }}>List is currently empty</h4> : books.map((room) => room && <ListItem type={ctx.userData.type} deleteHandle={handleDelete} handleFavorites={ctx.handleFavorites} favorites={ctx.favorites} view={ctx.handleRoomView} list={room} />)}
+             {books.length === 0 ? <h4 style={{ textAlign: 'center' }}>List is currently empty</h4> : books.map((room) => room && <ListItem type={ctx.userData.type} handleFavorites={ctx.handleFavorites} favorites={ctx.favorites} view={ctx.handleRoomView} list={room} />)}
           </div>
         </>
     )

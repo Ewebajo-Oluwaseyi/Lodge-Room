@@ -24,16 +24,15 @@ const Listing = () => {
     }, [ctx.roomList, ctx.userData._id, ctx.userData.type]);
 
     const handleDelete = async (id: any) => {
+        setLoading(true);
         try{
-            setLoading(true);
             const res = await axios.delete(`https://polar-ridge-98480.herokuapp.com/api/listing/${id}`);
-            //console.log(res)
-            setLoading(false) 
-            return res;
+            const {data} = await res
+            return data;
         } catch(e) {
-            return e
+
         }
-       
+        setLoading(false) 
     }
     
     return (
