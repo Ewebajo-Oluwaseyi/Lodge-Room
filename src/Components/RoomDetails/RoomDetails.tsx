@@ -2,8 +2,7 @@ import React, { useContext, useState, useEffect } from 'react'
 import Style from './RoomDetails.module.css';
 import AuthContext from '../../store/authContext';
 import { RoomList } from '../../store/authContext';
-import { useParams } from "react-router-dom"
-import bg2 from '../../assests/chelsea-gates-0653_wY0nRc-unsplash.jpg';
+import { useParams } from "react-router-dom";
 
 const RoomDetails = () => {
     const ctx = useContext(AuthContext);

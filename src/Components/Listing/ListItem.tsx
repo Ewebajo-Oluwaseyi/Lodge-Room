@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { RoomList } from '../../store/authContext';
 import Style from './Listing.module.css';
-import bg2 from '../../assests/chelsea-gates-0653_wY0nRc-unsplash.jpg';
 import Spinner from '../Spinner/Spinner';
 
 interface Props {

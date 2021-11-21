@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from 'react'
 import Style from '../Listing/Listing.module.css';
 import ListItem from '../Listing/ListItem';
 import AuthContext from '../../store/authContext';
-import axios from 'axios';
 
 const Booking = () => {
     const ctx = useContext(AuthContext);
