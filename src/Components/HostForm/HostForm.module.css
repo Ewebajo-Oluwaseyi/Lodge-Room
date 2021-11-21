@@ -1,6 +1,7 @@
 .Host {
   padding: 30px 10px;
   margin-top: 40px;
+  height: 100%;
 }
 
 .FormCol {
@@ -97,6 +98,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 5rem;
 }
 .Button:hover {
   background-color: #dfc5aa;

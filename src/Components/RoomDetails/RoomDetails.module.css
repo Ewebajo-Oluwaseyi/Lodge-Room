@@ -125,6 +125,7 @@
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 425px) {
@@ -164,9 +165,9 @@
     .Main {
       padding: 20px 50px;
       flex-direction: row;
-      margin-top: 100px;
       align-items: center;
       justify-content: center;
+      margin-top: 0;
     }
     .Main .Contents {
       display: flex;
@@ -178,12 +179,16 @@
     .Main .Contents h2 {
       font-size: 1.5rem;
     }
+    .Main .FormWrapper form .Form button {
+      margin-bottom: 0;
+    }
 }
 
 
 @media (min-width: 1024px) {
   .Main {
     padding: 20px 80px;
+    height: 100vh;
   }
   .Main .FormWrapper {
     margin: 40px 10px;

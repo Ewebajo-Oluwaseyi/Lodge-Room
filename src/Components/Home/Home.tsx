@@ -7,9 +7,11 @@ import bg3 from '../../assests/calabar.jpeg';
 import bg4 from '../../assests/ib.jpg';
 import ExploreItem from '../ExploreItem/ExploreItem';
 import AuthContext from '../../store/authContext';
+import { useHistory } from 'react-router-dom'
 
 const Home = () => {
   const ctx = useContext(AuthContext);
+  const history = useHistory();
 
     return (
         <div className={Styles.Home}>
@@ -17,7 +19,8 @@ const Home = () => {
                 <div className={Styles.HeroDark}>
                   <div className={Styles.HeroText}>
                     <h1>Explore hotels in Nigeria</h1>
-                    <button onClick={ctx.guestSignUp}>Get Started</button>
+                    {ctx.loggedIn ? <button onClick={() => history.push(`/${ctx.userData.firstname}/list`)}>Explore</button> : 
+                    <button onClick={ctx.guestSignUp}>Get Started</button>}
                   </div>
                 </div>
             </section>
@@ -29,19 +32,19 @@ const Home = () => {
                       <i className="fas fa-clipboard"></i>
                       <h2>Browse throghh our listing</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea est modi laborum minima ratione voluptates. Amet quam aut nesciunt?</p>
-                       <a href="!#">Browse</a>
+                       {/*<a href="!#">Browse</a>*/}
                     </div>
                     <div>
                       <i className="fas fa-check-square"></i>
                       <h2>Book your visits</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea est modi laborum minima ratione voluptates. Amet quam aut nesciunt?</p>
-                      <a href="!#">Book</a>
+                      {/*<a href="!#">Book</a>*/}
                     </div>
                     <div>
                       <i className="fas fa-globe-africa"></i>
                       <h2>Explore the world!</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea est modi laborum minima ratione voluptates. Amet quam aut nesciunt?</p>
-                      <a href="!#">Explore</a>
+                      {/*<a href="!#">Explore</a>*/}
                     </div>
                    </div>
                 </div>

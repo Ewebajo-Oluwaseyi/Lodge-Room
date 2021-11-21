@@ -52,7 +52,7 @@ const ListItem = (props: Props) => {
                     <span onClick={() => handFavorites(props.list._id)}>{state || props.favorites.includes(props.list._id) ? <i style={{"color": "red"}} className="fas fa-heart"></i> : 
                     <i className="far fa-heart"></i>} Fav</span> 
                     <span onClick={() => props.view(props.list._id)}><i className="fas fa-eye"></i>View</span>
-                </> : <i className="fas fa-trash" onClick={() => deleteList(props.list._id)}></i>}
+                </> : <span onClick={() => deleteList(props.list._id)}><i className="fas fa-trash"></i>Delete</span>}
             </div>
             {props.loading && <Spinner/> }
         </div>

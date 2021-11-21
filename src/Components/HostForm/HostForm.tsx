@@ -72,7 +72,7 @@ const HostForm = () => {
                     </div>
                     <div className={Style.Row}>
                         <div className={Style.Col}>
-                          <label>City</label>
+                          <label>Location</label>
                           <input type="text" placeholder="Enter Address" value={location} onChange={(e) => setLocation(e.target.value)}/>
                         </div>
                         <div className={Style.Col}>
@@ -83,10 +83,10 @@ const HostForm = () => {
                     <div className={Style.Col}>
                         <input type="file" onChange={handleFileUpload} id="image" name="image" />
                     </div>
+                    {response === "Upload Successful" ? <h4 style={{ color: "green" }}>{response}</h4> : <h4 style={{ color: "red" }}>{response}</h4>}
                     <Button className={Style.Button} type="submit" onClick={handleSubmit}>
                         {loading ? "Uploading..." : "Upload Listing"}
-                    </Button>
-                    {response === "Upload Successful" ? <h4 style={{ color: "green" }}>{response}</h4> : <h4 style={{ color: "red" }}>{response}</h4>}
+                    </Button> 
                 </div>                
             </Form>
         </div>

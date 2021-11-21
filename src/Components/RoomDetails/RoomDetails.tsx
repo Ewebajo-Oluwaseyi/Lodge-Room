@@ -56,15 +56,15 @@ const RoomDetails = () => {
                 <img src={bg2} alt="!#"/>
             </div>
             <div className={Style.Content}>
-              <h2>{data.title} {ctx.favorites && ctx.favorites.includes(data._id) ? <i style={{"color": "red"}} className="fas fa-heart"></i> : 
-                    <i className="far fa-heart"></i>}</h2>
+              <h2>{data.title} {/*ctx.favorites && ctx.favorites.includes(data._id) ? <i style={{"color": "red"}} className="fas fa-heart"></i> : 
+                    <i className="far fa-heart"></i>*/}</h2>
               <div className={Style.Info}>
               <p>
                 {data.location}
               </p>
                 <span>
                     {data.price}
-                    {data.booked ? <span style={{ "color": "red", "marginLeft": "1rem" }}>Not available</span> : "Available"}
+                    {data.booked ? <span style={{ "color": "red", "marginLeft": "1rem" }}>Not available</span> : <span style={{ "marginLeft": "1rem" }}>Available</span>}
                 </span>
               </div>
               <p className={Style.description}>{data.desc}</p>
@@ -87,10 +87,11 @@ const RoomDetails = () => {
                        <label>Phone:</label>
                        <input type="email" placeholder="Enter email" value={phone} onChange={handlePhoneInput}/>
                     </div>
+                    {show && <h5 style={{ "letterSpacing": "1px", "textAlign": "center", "lineHeight": "1.7" }}>{data.title} has been booked successfully!</h5>}
                     <button onClick={handleSubmit} disabled={data.booked || firstName === "" || lastName === "" || phone === ""} type="submit">
                         {ctx.loading ? "Booking..." : data.booked ? "Booked" : "Book Now"}
                     </button>
-                    {show && <h5 style={{ "letterSpacing": "1px", "textAlign": "center", "lineHeight": "1.7" }}>{data.title} has been booked successfully!</h5>}
+                   
                 </div>
             </form>
           </div>

@@ -7,9 +7,17 @@
 .Profile span {
   font-size: 1.4rem;
   color: #a84d38;
+  font-family: 'Parisienne', cursive;
   margin: 0px 10px;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 400;
+}
+
+@media (min-width: 1400px) {
+  .Profile span {
+    margin: 0px 20px;
+  }
 }
 
 .ProfileUser {

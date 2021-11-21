@@ -34,7 +34,7 @@ const Profile = (props: Props) => {
                <div className={Styles.ProfileName}>{props.name}</div>
             {dropdown &&
               <ul className={Styles.Dropdown}>
-                <li onClick={props.logout}><i className="fas fa-sign-out-alt"></i><span>Logout</span></li>
+                <li onClick={props.logout}><i className="fas fa-sign-out-alt"></i>Logout</li>
               </ul>}
             </div>
         </div>

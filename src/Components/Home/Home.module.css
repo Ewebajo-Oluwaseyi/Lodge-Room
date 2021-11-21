@@ -16,6 +16,7 @@
   height: 600px;
 }
 
+
 @media(min-width: 992px) {
   .Hero {
     height: 700px;
@@ -66,7 +67,7 @@
   }
 }
 .Hero .HeroText button {
-  width: 150px;
+  width: 160px;
   height: 40px;
   border-radius: 8px;
   background: #fff;
@@ -79,7 +80,7 @@
   margin-top: 20px;
   position: relative;
   z-index: 1;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 
 }
 .Hero .HeroText button span {
@@ -107,7 +108,7 @@
 
 @media(min-width: 768px) {
   .Hero .HeroText button {
-    width: 200px;
+    width: 180px;
     padding: 0 25px;
   }
 }
@@ -115,7 +116,6 @@
 @media (min-width: 1024px) {
   .Hero .HeroText button {
     font-size: 1.1rem;
-    width: 220px;
     height: 40px;
   }
 }
@@ -202,7 +202,7 @@
   .hostBg {
     width: 100vw;
     margin-bottom: 0;
-    margin-top: 80px;
+    margin-top: 40px;
   }
 }
 
@@ -248,7 +248,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 400px;
+  height: 320px;
 }
 
 .About .Main div i {
@@ -322,6 +322,7 @@
 
 .Explore {
   padding: 30px;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 679px) {

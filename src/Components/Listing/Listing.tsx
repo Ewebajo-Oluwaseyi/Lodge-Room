@@ -4,8 +4,10 @@ import { RoomList } from '../../store/authContext';
 import Style from './Listing.module.css';
 import ListItem from './ListItem';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom'
 
 const Listing = () => {
+    const history = useHistory();
     const ctx = useContext(AuthContext);
     const [listing, setListing] = useState([] as RoomList[])
     const [loading, setLoading] = useState(false);
@@ -25,7 +27,7 @@ const Listing = () => {
         try{
             setLoading(true);
             const res = await axios.delete(`https://polar-ridge-98480.herokuapp.com/api/listing/${id}`);
-            console.log(res)
+            //console.log(res)
             setLoading(false) 
             return res;
         } catch(e) {
@@ -38,7 +40,7 @@ const Listing = () => {
         <div className={Style.Listing}>
            <h3>LIST OF ROOMS</h3> 
            {listing.length === 0 ? <>
-            <h4>You currently have no list,</h4>{ /*<span onClick={() => history.push('/host/hostform')}>Add here..</span>*/}
+            <h4>You currently have no list</h4>{ctx.userData.type === 'host'  && <span style={{"cursor": "pointer"}} onClick={() => history.push('/host/hostform')}>Add here..</span>}
            </>: listing.map(list => list && <ListItem type={ctx.userData.type} view={ctx.handleRoomView} loading={loading} list={list} delete={true} deleteHandle={handleDelete} handleFavorites={ctx.handleFavorites} favorites={ctx.favorites}/>)
              }
         </div>
