@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={Style.footerWrapper}>
             <footer>
                 <div className={Style.text}>
-                    &copy; COPYRIGHT 2021 -HotelLoging ALL RIGHT RESERVE
+                    &copy; COPYRIGHT 2021 -Slodge ALL RIGHT RESERVE
                 </div>
                 <div className={Style.icons}>
                     <img src={twitter} alt=""/>
