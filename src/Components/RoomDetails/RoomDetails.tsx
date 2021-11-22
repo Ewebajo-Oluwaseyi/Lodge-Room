@@ -60,11 +60,11 @@ const RoomDetails = () => {
               <h2>{data.title} {/*ctx.favorites && ctx.favorites.includes(data._id) ? <i style={{"color": "red"}} className="fas fa-heart"></i> : 
                     <i className="far fa-heart"></i>*/}</h2>
               <div className={Style.Info}>
-              <p>
+              <p style={{"marginBottom": "1rem" }}>
                 {data.location}
               </p>
                 <span>
-                    {data.price}
+                &#8358;{data.price}
                     {data.booked ? <span style={{ "color": "red", "marginLeft": "1rem" }}>Not available</span> : <span style={{ "marginLeft": "1rem" }}>Available</span>}
                 </span>
               </div>
@@ -86,7 +86,7 @@ const RoomDetails = () => {
                     </div>  
                     <div className={Style.Col}>     
                        <label>Phone:</label>
-                       <input type="email" placeholder="Enter email" value={phone} onChange={handlePhoneInput}/>
+                       <input type="number" placeholder="Enter email" value={phone} onChange={handlePhoneInput}/>
                     </div>
                     {show && <h5 style={{ "letterSpacing": "1px", "textAlign": "center", "lineHeight": "1.7" }}>{data.title} has been booked successfully!</h5>}
                     <button onClick={handleSubmit} disabled={data.booked || firstName === "" || lastName === "" || phone === ""} type="submit">

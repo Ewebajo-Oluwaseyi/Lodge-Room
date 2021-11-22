@@ -45,7 +45,7 @@ const ListItem = (props: Props) => {
                 <span>{props.list.location}</span>
                 <h5>{props.list.features}</h5>
                 <div>
-                    <span>&#8358; {props.list.price}</span>
+                    <span>&#8358;{props.list.price}</span>
                 </div>
                 {props.type === "guest" ? <>
                     <span onClick={() => handFavorites(props.list._id)}>{state || props.favorites.includes(props.list._id) ? <i style={{"color": "red"}} className="fas fa-heart"></i> : 

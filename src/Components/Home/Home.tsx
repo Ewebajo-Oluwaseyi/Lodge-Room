@@ -26,24 +26,25 @@ const Home = () => {
             </section>
             <section>
                 <div className={Styles.About}>
-                   <h2>About Hotel Lodging</h2>
+                   <h2>About S-lodge</h2>
                    <div className={Styles.Main}>
                     <div>
                       <i className="fas fa-clipboard"></i>
-                      <h2>Browse throghh our listing</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea est modi laborum minima ratione voluptates. Amet quam aut nesciunt?</p>
+                      <h2>Browse throgh room list</h2>
+                      <p>At Slodge, there is diverse list of rooms and apartments in every major city in Nigeria 
+                        to match our guest taste and budget.</p>
                        {/*<a href="!#">Browse</a>*/}
                     </div>
                     <div>
                       <i className="fas fa-check-square"></i>
                       <h2>Book your visits</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea est modi laborum minima ratione voluptates. Amet quam aut nesciunt?</p>
+                      <p>Travelling out of town and need a place to stay. Simply select select any available rooms and book them, our hosts will contact you.</p>
                       {/*<a href="!#">Book</a>*/}
                     </div>
                     <div>
                       <i className="fas fa-globe-africa"></i>
                       <h2>Explore the world!</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ea est modi laborum minima ratione voluptates. Amet quam aut nesciunt?</p>
+                      <p>Come explore the beautiful cities in Nigeria. Book a room, Get connected with the host, Pack your bags and begin your adventure in any Nigerian city today.</p>
                       {/*<a href="!#">Explore</a>*/}
                     </div>
                    </div>

@@ -307,6 +307,8 @@
 
   .About .Main {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .About .Main div {
