@@ -27,7 +27,7 @@ const MobileNav = (props: Props) => {
       }
 
     const Listing = () => {
-        history.push(`/${props.name}/list)`)
+        history.push(`/${props.name}/list`)
         setOpenNav(!openNav)
     }
 
