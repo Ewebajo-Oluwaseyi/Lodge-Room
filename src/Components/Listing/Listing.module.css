@@ -58,7 +58,6 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 3rem;
 }
 
 .Listing .ListItem .details span {
@@ -130,6 +129,9 @@
   margin-right: 1rem; 
   margin-top: 1rem;
 }
+.Listing .ListItem .details h3 {
+  justify-content: space-between;
+}
 }
 
 @media (min-width: 768px) {
@@ -141,9 +143,7 @@
         height: 250px;
         margin: 0 20px;
     }
-    .Listing .ListItem .details h3 {
-      justify-content: space-between;
-    }
+   
 }
 
 @media (min-width: 1024px)  {
@@ -152,6 +152,10 @@
     } 
     .Listing .ListItem .details span  {
       margin-top: 1.8rem;
+    }
+    .Listing .ListItem .details h3 {
+      justify-content: space-between;
+      margin-bottom: 3rem;
     }
 }
   
