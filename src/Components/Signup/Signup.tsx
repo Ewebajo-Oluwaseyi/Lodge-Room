@@ -36,7 +36,7 @@ const Signup = () => {
                     </div>
                     <div className={Style.Col}>
                         <label>Confirm Password:</label>
-                        <input type="password" placeholder="Conform password" value={ctx.passwordConfirmation} onChange={ctx.handleConfirmPasswordInput}/>
+                        <input type="password" placeholder="Enter password" value={ctx.passwordConfirmation} onChange={ctx.handleConfirmPasswordInput}/>
                     </div>
                     <Button className={Style.Button} value={ctx.userType} type="submit" onClick={ctx.handleSignupSubmit}>
                         {ctx.loading ? "Signing up..." : "Sign Up"}
