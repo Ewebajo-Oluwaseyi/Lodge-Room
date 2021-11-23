@@ -81,7 +81,7 @@ const HostForm = () => {
                        </div>
                     </div>
                     <div className={Style.Col}>
-                        <input type="file" onChange={handleFileUpload} id="image" name="image" />
+                        <input type="file" onChange={handleFileUpload} id="image" name="image" required/>
                     </div>
                     {response === "Upload Successful" ? <h4 style={{ color: "green" }}>{response}</h4> : <h4 style={{ color: "red" }}>{response}</h4>}
                     <Button className={Style.Button} type="submit" onClick={handleSubmit}>
