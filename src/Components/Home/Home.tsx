@@ -64,7 +64,7 @@ const Home = () => {
                     <ExploreItem title="Lagos" image={bg1} hover={true}/>
                     <ExploreItem title="Abuja" image={bg2} hover={true}/>
                     <ExploreItem title="Calabar" image={bg3} hover={true}/>
-                    <ExploreItem title="Ibandan" image={bg4} hover={true}/>
+                    <ExploreItem title="Ibadan" image={bg4} hover={true}/>
                 </div>
             </section>
         </div>
